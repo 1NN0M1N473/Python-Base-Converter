@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 #Python program to convert between well-known bases
 #May add lesser-known bases in the future
 
