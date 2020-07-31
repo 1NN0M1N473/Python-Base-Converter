@@ -3,4 +3,6 @@ Lightweight number base converter written in python 3 for on-the-fly calculation
 
 Uses separate function for each conversion, accepts user input as a variable, converts it using int(variable, numberbase), then prints the result using bin(), oct(), or hex(), respectively.
 
-Intend to improve the code and expand available bases in the future
+Intend to improve the code and expand available bases in the future.
+
+Currently supports Binary, Octal, Decimal, and Hexadecimal, and any conversions thereof.
