@@ -11,69 +11,69 @@ import time
 
 #decimal to binary function
 def decimal_to_binary(dec):
-    decimal = int(dec)
-    print(decimal, "in Binary(base 2) is", bin(decimal))
+    decimal = int(dec, 10)
+    print(decimal, "in Binary(base 2) is", bin(decimal).lstrip('0b'))
 
 #decimal to octal function
 def decimal_to_octal(dec):
-    decimal = int(dec)
-    print(decimal, "in Octal(base 8) is", oct(decimal))
+    decimal = int(dec, 10)
+    print(decimal, "in Octal(base 8) is", oct(decimal).lstrip('0o'))
 
 #decimal to hexadecimal function
 def decimal_to_hex(dec):
-    decimal = int(dec)
+    decimal = int(dec, 10)
     print(decimal, "in Hexadecimal(base 16) is", hex(decimal))
 
 #binary functions
 
 #binary to octal function
-def binary_to_octal(bin):
-    binary = bin(bin)
-    print(binary, "in Octal(base 8) is", oct(binary))
+def binary_to_octal(inbin):
+    binary = int(inbin, 2)
+    print(inbin, "in Octal(base 8) is", oct(binary).lstrip('0o'))
 
 #binary to decimal function
-def binary_to_decimal(bin):
-    binary = bin(bin)
-    print(binary, "in Decimal(base 10) is", int(binary))
+def binary_to_decimal(inbin):
+    binary = int(inbin,2)
+    print(inbin, "in Decimal(base 10) is", int(binary))
 
 #binary to hexadecimal function
-def binary_to_hex(bin):
-    binary = bin(bin)
-    print(binary, "in Hexadecimal(base 16) is", hex(binary))
+def binary_to_hex(inbin):
+    binary = int(inbin, 2)
+    print(inbin, "in Hexadecimal(base 16) is", hex(binary))
 
 #octal functions
 
 #octal to binary function
-def octal_to_binary(oct):
-    octal = oct(oct)
-    print(octal, "in Binary(base 2) is", bin(octal))
+def octal_to_binary(inoct):
+    octal = int(inoct, 8)
+    print(inoct, "in Binary(base 2) is", bin(octal).lstrip('0b'))
 
 #octal to decimal funtion
-def octal_to_decimal(oct):
-    octal = oct(oct)
-    print(octal, "in Decimal(base 10) is", int(octal))
+def octal_to_decimal(inoct):
+    octal = int(inoct, 8)
+    print(inoct, "in Decimal(base 10) is", int(octal))
 
 #octal to hexadecimal function
-def octal_to_hex(oct):
-    octal = oct(oct)
-    print(octal, "in Hexadecimal(base 16) is", hex(octal))
+def octal_to_hex(inoct):
+    octal = int(inoct, 8)
+    print(inoct, "in Hexadecimal(base 16) is", hex(octal))
 
 #hexadecimal functions
 
 #hexadecimal to binary function
-def hex_to_binary(hex):
-    hexadecimal = hex(hex)
-    print(hexadecimal, "in Binary(base 2) is", bin(hexadecimal))
+def hex_to_binary(inhex):
+    hexadecimal = int(inhex, 16)
+    print(inhex, "in Binary(base 2) is", bin(hexadecimal).lstrip('0b'))
 
 #hexadecimal to octal function
-def hex_to_octal(hex):
-    hexadecimal = hex(hex)
-    print(hexadecimal, "in Octal(base 8) is", oct(hexadecimal))
+def hex_to_octal(inhex):
+    hexadecimal = int(inhex, 16)
+    print(inhex, "in Octal(base 8) is", oct(hexadecimal).lstrip('0o'))
 
 #hexadecimal to decimal function
-def hex_to_decimal(hex):
-    hexadecimal = hex(hex)
-    print(hexadecimal, "in Decimal(base 10) is", int(hexadecimal))
+def hex_to_decimal(inhex):
+    hexadecimal = int(inhex, 16)
+    print(inhex, "in Decimal(base 10) is", int(hexadecimal))
 
 ## Now for the interactive part ##
 
@@ -215,10 +215,10 @@ while True:
     elif selection =='4':
         time.sleep(1)
         print()
-        bin = input("OK, now enter the number you wish to convert: ")
+        inbin = input("OK, now enter the number you wish to convert: ")
         print()
         time.sleep(1)
-        binary_to_octal(bin)
+        binary_to_octal(inbin)
         print()
         print()
         time.sleep(1)
@@ -245,10 +245,10 @@ while True:
     elif selection =='5':
         time.sleep(1)
         print()
-        bin = input("OK, now enter the number you wish to convert: ")
+        inbin = input("OK, now enter the number you wish to convert: ")
         print()
         time.sleep(1)
-        binary_to_decimal(bin)
+        binary_to_decimal(inbin)
         print()
         print()
         time.sleep(1)
@@ -275,10 +275,10 @@ while True:
     elif selection =='6':
         time.sleep(1)
         print()
-        bin = input("OK, now enter the number you wish to convert: ")
+        inbin = input("OK, now enter the number you wish to convert: ")
         print()
         time.sleep(1)
-        binary_to_hex(bin)
+        binary_to_hex(inbin)
         print()
         print()
         time.sleep(1)
@@ -305,10 +305,10 @@ while True:
     elif selection =='7':
         time.sleep(1)
         print()
-        oct = input("OK, now enter the number you wish to convert: ")
+        inoct = input("OK, now enter the number you wish to convert: ")
         print()
         time.sleep(1)
-        octal_to_binary(oct)
+        octal_to_binary(inoct)
         print()
         print()
         time.sleep(1)
@@ -335,10 +335,10 @@ while True:
     elif selection =='8':
         time.sleep(1)
         print()
-        oct = input("OK, now enter the number you wish to convert: ")
+        inoct = input("OK, now enter the number you wish to convert: ")
         print()
         time.sleep(1)
-        octal_to_decimal(oct)
+        octal_to_decimal(inoct)
         print()
         print()
         time.sleep(1)
@@ -365,10 +365,10 @@ while True:
     elif selection =='9':
         time.sleep(1)
         print()
-        oct = input("OK, now enter the number you wish to convert: ")
+        inoct = input("OK, now enter the number you wish to convert: ")
         print()
         time.sleep(1)
-        octal_to_hex(oct)
+        octal_to_hex(inoct)
         print()
         print()
         time.sleep(1)
@@ -395,10 +395,10 @@ while True:
     elif selection =='10':
         time.sleep(1)
         print()
-        hex = input("OK, now enter the number you wish to convert: ")
+        inhex = input("OK, now enter the number you wish to convert: ")
         print()
         time.sleep(1)
-        hex_to_binary(hex)
+        hex_to_binary(inhex)
         print()
         print()
         time.sleep(1)
@@ -425,10 +425,10 @@ while True:
     elif selection =='11':
         time.sleep(1)
         print()
-        hex = input("OK, now enter the number you wish to convert: ")
+        inhex = input("OK, now enter the number you wish to convert: ")
         print()
         time.sleep(1)
-        hex_to_octal(hex)
+        hex_to_octal(inhex)
         print()
         print()
         time.sleep(1)
@@ -455,10 +455,10 @@ while True:
     elif selection =='12':
         time.sleep(1)
         print()
-        hex = input("OK, now enter the number you wish to convert: ")
+        inhex = input("OK, now enter the number you wish to convert: ")
         print()
         time.sleep(1)
-        hex_to_decimal(hex)
+        hex_to_decimal(inhex)
         print()
         print()
         time.sleep(1)
@@ -494,4 +494,3 @@ while True:
         print("Now you and I both know that's not a valid option....")
         time.sleep(1)
         print()
-    
